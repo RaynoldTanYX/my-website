@@ -62,7 +62,7 @@ export const projectData = [
 export const educationData = [
   {
     institute: "Nanyang Technological University (NTU), Singapore",
-    image: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Nanyang_Technological_University_coat_of_arms_vector.svg/1200px-Nanyang_Technological_University_coat_of_arms_vector.svg.png",
+    image: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Nanyang_Technological_University_coat_of_arms_vector.svg/150px-Nanyang_Technological_University_coat_of_arms_vector.svg.png",
     qualification: "Bachelor of Engineering in Computer Science",
     duration: "2018-2022(expected)",
     description: [

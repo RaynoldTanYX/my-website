@@ -166,7 +166,7 @@ function App() {
                    {projectData[i].title}
                 </Typography>
                 
-                <Grid container direction="row" alignItems="center" spacing={1}>
+                <Grid container direction="row" justify="flex-start" alignItems="flex-start" wrap="nowrap" spacing={1}>
                   <Grid item>
                     <YearIcon color="primary" fontSize='small'/>
                   </Grid>
@@ -177,7 +177,7 @@ function App() {
                   </Grid>
                 </Grid>
 
-                <Grid container direction="row" alignItems="center" spacing={1}>
+                <Grid container direction="row" justify="flex-start" alignItems="flex-start" wrap="nowrap" spacing={1}>
                   <Grid item>
                     <LanguageIcon color="primary" fontSize='small'/>
                   </Grid>
@@ -188,7 +188,7 @@ function App() {
                   </Grid>
                 </Grid>
 
-                <Grid container direction="row" alignItems="center" spacing={1}>
+                <Grid container direction="row" justify="flex-start" alignItems="flex-start" wrap="nowrap" spacing={1}>
                   <Grid item>
                     <ToolIcon color="primary" fontSize='small'/>
                   </Grid>
@@ -199,7 +199,7 @@ function App() {
                   </Grid>
                 </Grid>
 
-                <Grid container direction="row" alignItems="center" spacing={1}>
+                <Grid container direction="row" justify="flex-start" alignItems="flex-start" wrap="nowrap" spacing={1}>
                   <Grid item>
                     <PlatformIcon color="primary" fontSize='small'/>
                   </Grid>
@@ -253,22 +253,22 @@ function App() {
                       {educationData[i].institute}
                     </Typography>
                     
-                    <Grid container direction="row" justify="center" alignItems="flex-start" spacing={0}>
-                      <Grid item xs={1}>
+                    <Grid container direction="row" justify="flex-start" alignItems="flex-start" wrap="nowrap" spacing={1}>
+                      <Grid item>
                         <QualificationIcon color="primary" fontSize='small'/>
                       </Grid>
-                      <Grid item xs={11}>
+                      <Grid item>
                       <Typography variant="body1" color="textSecondary" component="p" align="left">
                         {educationData[i].qualification}
                       </Typography>
                       </Grid>
                     </Grid>
 
-                    <Grid container direction="row" justify="center" alignItems="flex-start" spacing={0}>
-                      <Grid item xs={1}>
+                    <Grid container direction="row" justify="flex-start" alignItems="flex-start" wrap="nowrap" spacing={1}>
+                      <Grid item>
                         <YearIcon color="primary" fontSize='small'/>
                       </Grid>
-                      <Grid item xs={11}>
+                      <Grid item>
                         <Typography variant="body1" color="textSecondary" component="p" align="left">
                           {educationData[i].duration}
                         </Typography>
