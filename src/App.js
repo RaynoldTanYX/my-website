@@ -28,9 +28,10 @@ import YearIcon from '@material-ui/icons/EventAvailable';
 import LanguageIcon from "@material-ui/icons/Code";
 import ToolIcon from '@material-ui/icons/Build';
 import PlatformIcon from '@material-ui/icons/Devices';
-import DescriptionIcon from '@material-ui/icons/Description';
+//icons for education
+import QualificationIcon from '@material-ui/icons/Assignment';
 //constants
-import {projectData} from './Constants';
+import { projectData, educationData, workData } from './Constants';
 
 const useStyles = makeStyles({
   root: {
@@ -44,24 +45,37 @@ const useStyles = makeStyles({
     //width: '200px'
   },
   tabspaper: {
-    width: "75vw",
+    //width: "100%",
     backgroundColor: '#1c1f25',
     justify: 'center',
   },
   contentpaper: {
-    width: '100%',
+    //width: '100%',
     minHeight: "70vh",
     justify: 'center',
-    padding: 10,
     backgroundColor: '#1c1f25',
   },
   projcard: {
-    maxWidth: 345,
+    //maxWidth: 345,
     backgroundColor: '#1c1f25',
   },
+  projcardmediacontainer: {
+    paddingTop: "56.25%", //to maintain 16:9 aspect ratio
+    position:"relative",
+    overflow:"hidden",
+  },
   projcardmedia: {
-    height: 220,
-    backgroundColor: '#1c1f25',
+    position:"absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    border: 0,
+  },
+  educardmedia: {
+    width: "100px",
+    //height: 100,
+    //backgroundColor: 'white',
   },
 });
 
@@ -91,20 +105,20 @@ function App() {
 
   const RenderTabs = () => {
     return (
-      <div>
+      <Grid container direction="column" xs={12}>
         <Tabs
           value={tabValue}
           onChange={handleChange}
-          variant="fullWidth"
+          centered
+          //variant="fullWidth"
           indicatorColor="primary"
           textColor="primary"
           aria-label="icon tabs example"
-          centered
         >
           <Tab label="Projects" icon={<ProjectIcon />} aria-label="Projects" />
-          <Tab label="Education" icon={<SchoolIcon />} aria-label="Projects" />
-          <Tab label="Work" icon={<WorkIcon />} aria-label="Projects" />
-          <Tab label="Contact" icon={<ContactIcon />} aria-label="Projects" />
+          <Tab label="Education" icon={<SchoolIcon />} aria-label="Education" />
+          <Tab label="Work" icon={<WorkIcon />} aria-label="Work" />
+          <Tab label="Contact" icon={<ContactIcon />} aria-label="Contact" />
         </Tabs>
         <TabPanel value={tabValue} index={0}>
           {RenderTab_Projects()}
@@ -118,33 +132,35 @@ function App() {
         <TabPanel value={tabValue} index={3}>
           {RenderTab_Contact()}
         </TabPanel>
-      </div>
+      </Grid>
     );
   };
 
-  const RenderTab_Projects_Desc = (i) => {
+  const RenderDescription = (descArray) => {
     let desc = [];
-    for (let j = 0; j < projectData[i].description.length; j++)
+    for (let i = 0; i < descArray.length; i++)
     {
-      desc.push(projectData[i].description[j]);
-      desc.push(<br/>);
+      desc.push(descArray[i]);
       desc.push(<br/>);
     }
     return (desc);
   };
+  
   const RenderTab_Projects = () => {
     let projects = [];
     for (let i = 0; i < projectData.length; i++) {
       projects.push(
-        <Grid item>
+        <Grid item xs={12} md={6} xl={3}>
           <Card className={classes.projcard} elevation={3}>
-            <CardActionArea>
-              <CardMedia
-                component="iframe"
-                className={classes.projcardmedia}
-                image={projectData[i].video}
-                title={projectData[i].title}
-              />
+            <CardActionArea onClick={()=>window.open(projectData[i].link,"_blank")}>
+              <Grid container className={classes.projcardmediacontainer}>
+                <CardMedia
+                  component="iframe"
+                  className={classes.projcardmedia}
+                  src={projectData[i].video}
+                  title={projectData[i].title}
+                />
+              </Grid>
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
                    {projectData[i].title}
@@ -195,7 +211,7 @@ function App() {
                 </Grid>
                 <br/>
                 <Typography variant="body1" color="textSecondary" component="p" align="left">
-                  {RenderTab_Projects_Desc(i)}
+                  {RenderDescription(projectData[i].description)}
                 </Typography>
 
               </CardContent>
@@ -215,9 +231,71 @@ function App() {
   };
 
   const RenderTab_Education = () => {
+    let education = [];
+    for (let i = 0; i < educationData.length; i++) {
+      education.push(
+        <Grid item xs={12}>
+          <Card className={classes.projcard} elevation={3}>
+            <CardActionArea onClick={()=>window.open(educationData[i].link,"_blank")}>
+              <CardContent>
+
+                <Grid container spacing={2} alignItems="center">
+                  <Grid item>
+                    <CardMedia
+                      component="img"
+                      className={classes.educardmedia}
+                      src={educationData[i].image}
+                      title={educationData[i].institute}
+                    />
+                  </Grid>
+                  <Grid item>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      {educationData[i].institute}
+                    </Typography>
+                    
+                    <Grid container direction="row" justify="center" alignItems="flex-start" spacing={0}>
+                      <Grid item xs={1}>
+                        <QualificationIcon color="primary" fontSize='small'/>
+                      </Grid>
+                      <Grid item xs={11}>
+                      <Typography variant="body1" color="textSecondary" component="p" align="left">
+                        {educationData[i].qualification}
+                      </Typography>
+                      </Grid>
+                    </Grid>
+
+                    <Grid container direction="row" justify="center" alignItems="flex-start" spacing={0}>
+                      <Grid item xs={1}>
+                        <YearIcon color="primary" fontSize='small'/>
+                      </Grid>
+                      <Grid item xs={11}>
+                        <Typography variant="body1" color="textSecondary" component="p" align="left">
+                          {educationData[i].duration}
+                        </Typography>
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                
+                </Grid>
+                <br/>
+                <Typography variant="body1" color="textSecondary" component="p" align="left">
+                  {RenderDescription(educationData[i].description)}
+                </Typography>
+
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+      );
+    }
+      
     return (
       <Paper className={classes.contentpaper} elevation={0}>
+        <Grid container spacing={3} direction='row' justify='center'>
+          {education}
+        </Grid>
       </Paper>
+
     );
   };
 
@@ -248,13 +326,14 @@ function App() {
       <ThemeProvider theme={theme}>
         <Grid container 
         direction='column'
-        justify='flex-start'
-        alignItems='center'>
+        justify='center'
+        alignItems='center'
+        width='100%'>
           <Grid item>
             {RenderHeader()}
           </Grid>
-          <Grid item>
-            <Paper elevation={3} className={classes.tabspaper}>
+          <Grid item xs={12} sm={11} md={10}>
+            <Paper elevation={3} className={classes.tabspaper} width='100%'>
               {RenderTabs()}
             </Paper>
           </Grid>
