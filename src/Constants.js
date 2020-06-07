@@ -1,3 +1,8 @@
+//icons for contactData
+import MailIcon from '@material-ui/icons/Mail';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
+
 export const projectData = [
   {
     title: "Activation App",
@@ -87,5 +92,48 @@ export const educationData = [
 ];
 
 export const workData = [
-
+  {
+    company: "Global eTrade Services",
+    role: "Software Engineer (Fullstack) Intern",
+    duration: "May 2020 - Aug 2020 (3 months)",
+    image: "https://globaletrade.services/themes/gets/logo.svg",
+    description: "",
+    link: "https://globaletrade.services/"
+  },
+  {
+    company: "Data Science and Artificial Intelligence Research (DSAIR) Lab @ NTU",
+    role: "Part-time Student Assistant",
+    duration: "Aug 2019 - Jan 2020 (6 months)",
+    image: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Nanyang_Technological_University_coat_of_arms_vector.svg/150px-Nanyang_Technological_University_coat_of_arms_vector.svg.png",
+    description: "",
+    link: "https://dsair.ntu.edu.sg/Pages/Home.aspx"
+  },
+  {
+    company: "Infinito Games",
+    role: "Full-time Game Developer",
+    duration: "Jun 2016 - Oct 2016 (5 months)",
+    image: "https://lh6.googleusercontent.com/CX5zExOrEIv_RI8DzK3nZsp9Ho_rxksEbPmejKPmpKI7ZwitzTYeTr1JHQwKTki9lgQMgxHAMscj835qED0LsWlze3F7B8CiGasYyFRrR95AgtBrzFA=w572",
+    description: "",
+    link: "https://www.infinitogames.com/"
+  },
 ];
+
+export const contactData = [
+  {
+    icon: MailIcon,
+    link: "mailto:RaynoldTanYX@gmail.com",
+    text: "RaynoldTanYX@gmail.com",
+  },
+  {
+    icon: LinkedInIcon,
+    link: "https://www.linkedin.com/in/raynoldtan/",
+    text: "https://www.linkedin.com/in/raynoldtan/",
+  },
+];
+
+export const colorData = {
+  dark: {
+    background: "#17191d",
+    primary: "#00695F",
+  },
+}

@@ -16,7 +16,7 @@ import TabPanel from "./TabPanel";
 import { sizing } from '@material-ui/system';
 
 //colors
-import { teal, pink } from "@material-ui/core/colors";
+import { teal, pink, blueGrey } from "@material-ui/core/colors";
 
 //icons for tabs
 import SchoolIcon from "@material-ui/icons/School";
@@ -30,8 +30,11 @@ import ToolIcon from '@material-ui/icons/Build';
 import PlatformIcon from '@material-ui/icons/Devices';
 //icons for education
 import QualificationIcon from '@material-ui/icons/Assignment';
+//icons for contact
+import MailIcon from '@material-ui/icons/Mail';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 //constants
-import { projectData, educationData, workData } from './Constants';
+import { projectData, educationData, workData, contactData } from './Constants';
 
 const useStyles = makeStyles({
   root: {
@@ -46,18 +49,18 @@ const useStyles = makeStyles({
   },
   tabspaper: {
     //width: "100%",
-    backgroundColor: '#1c1f25',
+    backgroundColor: blueGrey[800],
     justify: 'center',
   },
   contentpaper: {
     //width: '100%',
     minHeight: "70vh",
     justify: 'center',
-    backgroundColor: '#1c1f25',
+    backgroundColor: blueGrey[800],
   },
   projcard: {
     //maxWidth: 345,
-    backgroundColor: '#1c1f25',
+    backgroundColor: blueGrey[900],
   },
   projcardmediacontainer: {
     paddingTop: "56.25%", //to maintain 16:9 aspect ratio
@@ -73,8 +76,16 @@ const useStyles = makeStyles({
     border: 0,
   },
   educardmedia: {
-    width: "100px",
+    maxWidth: "6rem",
+    maxHeight: '6rem',
+    objectFit: "contain",
     //height: 100,
+    //backgroundColor: 'white',
+  },
+  workcardmedia: {
+    maxWidth: "6rem",
+    maxHeight: '6rem',
+    objectFit: "contain",
     //backgroundColor: 'white',
   },
 });
@@ -226,8 +237,8 @@ function App() {
           {projects}
         </Grid>
       </Paper>
-
     );
+
   };
 
   const RenderTab_Education = () => {
@@ -239,8 +250,8 @@ function App() {
             <CardActionArea onClick={()=>window.open(educationData[i].link,"_blank")}>
               <CardContent>
 
-                <Grid container spacing={2} alignItems="center">
-                  <Grid item>
+                <Grid container spacing={2} alignItems="flex-start">
+                  <Grid item xs={2} md={1}>
                     <CardMedia
                       component="img"
                       className={classes.educardmedia}
@@ -248,7 +259,7 @@ function App() {
                       title={educationData[i].institute}
                     />
                   </Grid>
-                  <Grid item>
+                  <Grid item xs={10} md={11}>
                     <Typography gutterBottom variant="h5" component="h2">
                       {educationData[i].institute}
                     </Typography>
@@ -291,7 +302,7 @@ function App() {
       
     return (
       <Paper className={classes.contentpaper} elevation={0}>
-        <Grid container spacing={3} direction='row' justify='center'>
+        <Grid container spacing={3} direction='row' justify='center' alignItems='flex-start'>
           {education}
         </Grid>
       </Paper>
@@ -300,13 +311,123 @@ function App() {
   };
 
   const RenderTab_Work = () => {
+    let work = [];
+    for (let i = 0; i < workData.length; i++) {
+      work.push(
+        <Grid item xs={12}>
+          <Card className={classes.projcard} elevation={3}>
+            <CardActionArea onClick={()=>window.open(educationData[i].link,"_blank")}>
+              <CardContent>
+
+                <Grid container spacing={2} alignItems="flex-start">
+                  <Grid item xs={2} md={1}>
+                    <CardMedia
+                      component="img"
+                      className={classes.workcardmedia}
+                      src={workData[i].image}
+                      title={workData[i].company}
+                    />
+                  </Grid>
+                  <Grid item xs={10} md={11}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      {workData[i].company}
+                    </Typography>
+                    
+                    <Grid container direction="row" justify="flex-start" alignItems="flex-start" wrap="nowrap" spacing={1}>
+                      <Grid item>
+                        <QualificationIcon color="primary" fontSize='small'/>
+                      </Grid>
+                      <Grid item>
+                      <Typography variant="body1" color="textSecondary" component="p" align="left">
+                        {workData[i].role}
+                      </Typography>
+                      </Grid>
+                    </Grid>
+
+                    <Grid container direction="row" justify="flex-start" alignItems="flex-start" wrap="nowrap" spacing={1}>
+                      <Grid item>
+                        <YearIcon color="primary" fontSize='small'/>
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="body1" color="textSecondary" component="p" align="left">
+                          {workData[i].duration}
+                        </Typography>
+                      </Grid>
+                    </Grid>
+                  </Grid>
+                
+                </Grid>
+                <br/>
+                <Typography variant="body1" color="textSecondary" component="p" align="left">
+                  {RenderDescription(workData[i].description)}
+                </Typography>
+
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+      );
+    }
+      
     return (
       <Paper className={classes.contentpaper} elevation={0}>
+        <Grid container spacing={3} direction='row' justify='center' alignItems='flex-start'>
+          {work}
+        </Grid>
       </Paper>
+
     );
   };
 
   const RenderTab_Contact = () => {
+  
+    return (
+      <Paper className={classes.contentpaper} elevation={0}>
+        <Grid container spacing={5} direction='row' justify='center'>
+          
+          
+          <Grid item xs={12}>
+            <Card className={classes.projcard} elevation={3}>
+              <CardActionArea onClick={()=>window.open(contactData[0].link,"_blank")}>
+                <CardContent>                
+                  <Grid container direction="column" justify="center" alignItems="center" wrap="nowrap" spacing={1}>
+                    <Grid item>
+                      <MailIcon color="primary" fontSize='large'/>
+                    </Grid>
+                    <Grid item>
+                    <Typography variant="body1" color="textSecondary" component="p" align="left">
+                      {contactData[0].text}
+                    </Typography>
+                    </Grid>
+                  </Grid>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Card className={classes.projcard} elevation={3}>
+              <CardActionArea onClick={()=>window.open(contactData[1].link,"_blank")}>
+                <CardContent>                
+                  <Grid container direction="column" justify="center" alignItems="center" wrap="nowrap" spacing={1}>
+                    <Grid item>
+                      <LinkedInIcon color="primary" fontSize='large'/>
+                    </Grid>
+                    <Grid item>
+                    <Typography variant="body1" color="textSecondary" component="p" align="left">
+                      {contactData[1].text}
+                    </Typography>
+                    </Grid>
+                  </Grid>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+
+        </Grid>
+      </Paper>
+
+    );
     return (
       <Paper className={classes.contentpaper} elevation={0}>
         <Typography gutterBottom variant="h5" component="h2">
@@ -325,10 +446,9 @@ function App() {
     <div className={classes.root}>
       <ThemeProvider theme={theme}>
         <Grid container 
-        direction='column'
+        direction='row'
         justify='center'
-        alignItems='center'
-        width='100%'>
+        alignItems='flex-start'>
           <Grid item>
             {RenderHeader()}
           </Grid>
