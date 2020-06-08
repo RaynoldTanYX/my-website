@@ -18,6 +18,7 @@ import { sizing } from '@material-ui/system';
 //colors
 import { teal, pink, blueGrey } from "@material-ui/core/colors";
 
+import SvgIcon from '@material-ui/core/SvgIcon';
 //icons for tabs
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
@@ -316,7 +317,7 @@ function App() {
       work.push(
         <Grid item xs={12}>
           <Card className={classes.projcard} elevation={3}>
-            <CardActionArea onClick={()=>window.open(educationData[i].link,"_blank")}>
+            <CardActionArea onClick={()=>window.open(workData[i].link,"_blank")}>
               <CardContent>
 
                 <Grid container spacing={2} alignItems="flex-start">
@@ -380,50 +381,35 @@ function App() {
   };
 
   const RenderTab_Contact = () => {
-  
+    let contacts = [];
+    contactData.map((item, index) => {
+      contacts.push(
+        <Grid item xs={12}>
+          <Card className={classes.projcard} elevation={3}>
+            <CardActionArea onClick={()=>window.open(item.link,"_blank")}>
+              <CardContent>                
+                <Grid container direction="column" justify="center" alignItems="center" wrap="nowrap" spacing={1}>
+                  <Grid item>
+                    <SvgIcon color="primary" fontSize='large' component={item.icon}/>
+                  </Grid>
+                  <Grid item>
+                  <Typography variant="body1" color="textSecondary" component="p" align="left">
+                    {item.text}
+                  </Typography>
+                  </Grid>
+                </Grid>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+        );
+    });
+
+
     return (
       <Paper className={classes.contentpaper} elevation={0}>
         <Grid container spacing={5} direction='row' justify='center'>
-          
-          
-          <Grid item xs={12}>
-            <Card className={classes.projcard} elevation={3}>
-              <CardActionArea onClick={()=>window.open(contactData[0].link,"_blank")}>
-                <CardContent>                
-                  <Grid container direction="column" justify="center" alignItems="center" wrap="nowrap" spacing={1}>
-                    <Grid item>
-                      <MailIcon color="primary" fontSize='large'/>
-                    </Grid>
-                    <Grid item>
-                    <Typography variant="body1" color="textSecondary" component="p" align="left">
-                      {contactData[0].text}
-                    </Typography>
-                    </Grid>
-                  </Grid>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-
-          <Grid item xs={12}>
-            <Card className={classes.projcard} elevation={3}>
-              <CardActionArea onClick={()=>window.open(contactData[1].link,"_blank")}>
-                <CardContent>                
-                  <Grid container direction="column" justify="center" alignItems="center" wrap="nowrap" spacing={1}>
-                    <Grid item>
-                      <LinkedInIcon color="primary" fontSize='large'/>
-                    </Grid>
-                    <Grid item>
-                    <Typography variant="body1" color="textSecondary" component="p" align="left">
-                      {contactData[1].text}
-                    </Typography>
-                    </Grid>
-                  </Grid>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-          </Grid>
-
+          {contacts}
         </Grid>
       </Paper>
 

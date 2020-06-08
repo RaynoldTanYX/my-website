@@ -4,6 +4,17 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 
 export const projectData = [
+  // {
+  //   title: "Personal Website",
+  //   //video: "raynoldtan.com",
+  //   year: "2020",
+  //   language: "Javascript",
+  //   tools: "ReactJS and Material-UI",
+  //   platform: "Web",
+  //   description: [
+  //   ],
+  //   link: "raynoldtan.com",
+  // },
   {
     title: "Activation App",
     video: "https://www.youtube.com/embed/8AwZOFpQwSg",
@@ -73,11 +84,11 @@ export const educationData = [
     description: [
       
     ],
-    link: "https://www.ntu.edu.sg/Pages/home.aspx",
+    link: "http://scse.ntu.edu.sg/Programmes/CurrentStudents/Undergraduate/Pages/CS.aspx",
   },
   {
     institute: "Nanyang Polytechnic (NYP), Singapore",
-    image: "https://lh3.googleusercontent.com/proxy/yO5ucbrivYRzaKFIGsG_JDq49RsfttYrDmBUc8tQhVg84aNs4wtiz9CHSF9ftIdHNEG_AGiX1x2I7kYJ2CLOGoiMNBIYxoheUPKSahzJEk8i8ToTT3Y",
+    image: "https://lh3.googleusercontent.com/proxy/x5xaZJJS12YRtPAfgduiQRPrOYGrR7HTN0hFcGBoOcjNKkgF5EAnKP0EjrIzJXiy8AHLejEAJQmy7LVF1BYtgYIBUJTY6PsrYFIa0AbpEV3VKpJTc5w",
     qualification: "Diploma in Digital Entertainment Technology (Games)",
     duration: "2013-2016",
     description: [
@@ -87,7 +98,7 @@ export const educationData = [
       "Awarded second place for the National Crime Prevention Council Mobile Game Design Contest.",
       "Certified with PlayStation Game Development Training.",
     ],
-    link: "https://www.nyp.edu.sg/",
+    link: "https://www.nyp.edu.sg/schools/sidm/full-time-courses/game-development-and-technology.html",
   },
 ];
 
@@ -130,10 +141,3 @@ export const contactData = [
     text: "https://www.linkedin.com/in/raynoldtan/",
   },
 ];
-
-export const colorData = {
-  dark: {
-    background: "#17191d",
-    primary: "#00695F",
-  },
-}
