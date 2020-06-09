@@ -141,3 +141,7 @@ export const contactData = [
     text: "https://www.linkedin.com/in/raynoldtan/",
   },
 ];
+
+export const recaptchaKey = "6LcdwgEVAAAAAJc19Sj50r4akRu4ewLFFpbkkWll";
+
+export const contactFormLink = "https://submit-form.com/0uNfM4rkHczwkAioF-bDa";

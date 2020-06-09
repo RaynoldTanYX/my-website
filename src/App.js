@@ -34,6 +34,7 @@ import QualificationIcon from '@material-ui/icons/Assignment';
 //icons for contact
 import MailIcon from '@material-ui/icons/Mail';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import ContactForm from "./ContactForm";
 //constants
 import { projectData, educationData, workData, contactData } from './Constants';
 
@@ -382,6 +383,26 @@ function App() {
 
   const RenderTab_Contact = () => {
     let contacts = [];
+    contacts.push(
+      <Grid item xs={12}>
+        <Card className={classes.projcard} elevation={3}>
+          <CardActionArea>
+            <CardContent>                
+              <Grid container direction="column" justify="center" alignItems="center" wrap="nowrap" spacing={1}>
+                <Grid item>
+                  <SvgIcon color="primary" fontSize='large' component={MailIcon}/>
+                </Grid>
+                <Grid item>
+                <Typography variant="body1" color="textSecondary" component="p" align="left">
+                  {<ContactForm/>}
+                </Typography>
+                </Grid>
+              </Grid>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Grid>
+      );
     contactData.map((item, index) => {
       contacts.push(
         <Grid item xs={12}>
