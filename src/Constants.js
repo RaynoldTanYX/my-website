@@ -132,8 +132,8 @@ export const workData = [
 export const contactData = [
   {
     icon: MailIcon,
-    link: "mailto:RaynoldTanYX@gmail.com",
-    text: "RaynoldTanYX@gmail.com",
+    link: "mail"+"to:"+"contact"+"@"+"raynoldtan.com", //split data to prevent data scraping
+    text: "contact"+"@"+"raynoldtan.com", //split data to prevent data scraping
   },
   {
     icon: LinkedInIcon,
@@ -142,6 +142,6 @@ export const contactData = [
   },
 ];
 
-export const recaptchaKey = "6LcdwgEVAAAAAJc19Sj50r4akRu4ewLFFpbkkWll";
+export const recaptchaKey = "6LcdwgEVAAAAAJc19Sj50r4akRu4ewLFFpbkkWll"; //only can be accessed by specific domains
 
 export const contactFormLink = "https://submit-form.com/0uNfM4rkHczwkAioF-bDa";

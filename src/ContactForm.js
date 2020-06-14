@@ -85,6 +85,13 @@ class ContactForm extends Component {
   render() {
     return (
         <form onSubmit={this.onSubmit}>
+          <input
+            type="checkbox"
+            name="_honeypot"
+            style={{display: "none"}}
+            tabindex="-1"
+            autocomplete="off"
+          />
             <Grid
                 container
                 direction="column"
