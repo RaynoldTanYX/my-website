@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
+import logo from "../../logo.svg";
 import "./App.css";
 import { Grid, Typography, Paper, makeStyles, Link } from "@material-ui/core";
 import { Button, IconButton } from "@material-ui/core";
@@ -12,11 +12,11 @@ import {
   CardActions,
 } from "@material-ui/core";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import TabPanel from "./TabPanel";
+import TabPanel from "../TabPanel";
 import { sizing } from '@material-ui/system';
 
 //colors
-import { teal, pink, blueGrey } from "@material-ui/core/colors";
+import { teal, pink, grey } from "@material-ui/core/colors";
 
 import SvgIcon from '@material-ui/core/SvgIcon';
 //icons for tabs
@@ -34,15 +34,16 @@ import QualificationIcon from '@material-ui/icons/Assignment';
 //icons for contact
 import MailIcon from '@material-ui/icons/Mail';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import ContactForm from "./ContactForm";
+import ContactForm from "../ContactForm";
 //constants
-import { projectData, educationData, workData, contactData } from './Constants';
+import { projectData, educationData, workData, contactData } from '../../Constants';
 
 const useStyles = makeStyles({
   root: {
-    //backgroundColor: '#FFF',
+    backgroundColor: "black",
     //minHeight: '100vh',
-    width: "100vw",
+    width: "100%",
+    height: "100%"
   },
   headerimage: {
     height: "15vh",
@@ -51,18 +52,18 @@ const useStyles = makeStyles({
   },
   tabspaper: {
     //width: "100%",
-    backgroundColor: blueGrey[800],
+    backgroundColor: grey[900],
     justify: 'center',
   },
   contentpaper: {
     //width: '100%',
     minHeight: "70vh",
     justify: 'center',
-    backgroundColor: blueGrey[800],
+    backgroundColor: grey[900],
   },
   projcard: {
     //maxWidth: 345,
-    backgroundColor: blueGrey[900],
+    backgroundColor: grey[800],
   },
   projcardmediacontainer: {
     paddingTop: "56.25%", //to maintain 16:9 aspect ratio
@@ -112,7 +113,7 @@ function App() {
 
   const RenderHeader = () => {
     return (
-      <img src={require('./images/header.png')} className={classes.headerimage} alt='Logo'/>
+      <img src={require('../../images/header.png')} className={classes.headerimage} alt='Logo'/>
     );
   };
 

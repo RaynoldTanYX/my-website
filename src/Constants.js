@@ -145,3 +145,5 @@ export const contactData = [
 export const recaptchaKey = "6LcdwgEVAAAAAJc19Sj50r4akRu4ewLFFpbkkWll"; //only can be accessed by specific domains
 
 export const contactFormLink = "https://submit-form.com/0uNfM4rkHczwkAioF-bDa";
+
+export const DATA_GOV_SG_URL = "https://api.data.gov.sg";
