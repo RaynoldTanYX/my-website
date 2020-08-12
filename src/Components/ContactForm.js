@@ -139,7 +139,7 @@ class ContactForm extends Component {
                       <Recaptcha
                         sitekey={recaptchaKey}
                         render="onload"
-                        theme="dark"
+                        theme="light"
                         verifyCallback={this.onCaptchaVerify}
                         />
                     </Grid>
