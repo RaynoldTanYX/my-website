@@ -1,7 +1,9 @@
 //icons for contactData
 import MailIcon from '@material-ui/icons/Mail';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import DescriptionIcon from '@material-ui/icons/Description';
 
+import ResumeLink from './files/resume.pdf'
 
 export const projectData = [
   // {
@@ -82,7 +84,7 @@ export const educationData = [
     qualification: "Bachelor of Engineering in Computer Science",
     duration: "2018-2022(expected)",
     description: [
-      
+      "Sub-Committee Member for the Photo-Videographic Society."
     ],
     link: "http://scse.ntu.edu.sg/Programmes/CurrentStudents/Undergraduate/Pages/CS.aspx",
   },
@@ -93,9 +95,9 @@ export const educationData = [
     duration: "2013-2016",
     description: [
       "Graduated with a GPA of 3.79.", 
-      "Admitted into Director's List for 5 semesters.",
+      "Received Director's List awards for five semesters. ",
       "Went on an overseas internship at Kajaani University of Applied Sciences, Finland.",
-      "Awarded second place for the National Crime Prevention Council Mobile Game Design Contest.",
+      "First runner up in the National Crime Prevention Council Mobile Game Design Contest 2015.",
       "Certified with PlayStation Game Development Training.",
     ],
     link: "https://www.nyp.edu.sg/schools/sidm/full-time-courses/game-development-and-technology.html",
@@ -108,7 +110,11 @@ export const workData = [
     role: "Software Engineer (Fullstack) Intern",
     duration: "May 2020 - Aug 2020 (3 months)",
     image: "https://globaletrade.services/themes/gets/logo.svg",
-    description: "",
+    description: [
+      "Involved in the implementation and testing phases of DataTX, an artificial intelligence based software tool that allows the user to harness pre-existing information in digital and non-digital format to ease data entry.", 
+      "Developed using JavaScript ,ReactJS and Axios for the front-end web application, and for the back-end using Java, Spring and MongoDB.",   
+      "Created load testing scripts using Load Runner software."
+    ],
     link: "https://globaletrade.services/"
   },
   {
@@ -116,7 +122,11 @@ export const workData = [
     role: "Part-time Student Assistant",
     duration: "Aug 2019 - Jan 2020 (6 months)",
     image: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Nanyang_Technological_University_coat_of_arms_vector.svg/150px-Nanyang_Technological_University_coat_of_arms_vector.svg.png",
-    description: "",
+    description: [
+      "Developed for IntelliK, a game authoring platform which enables creative people to develop artificial intelligence powered digital games without requiring any programming skills, using Unity3D with C#.",
+      "In charge of porting the application to mobile operating systems.", 
+      "Worked closely with a graphic designer to develop the entire mobile user interface."
+    ],
     link: "https://dsair.ntu.edu.sg/Pages/Home.aspx"
   },
   {
@@ -124,16 +134,26 @@ export const workData = [
     role: "Full-time Game Developer",
     duration: "Jun 2016 - Oct 2016 (5 months)",
     image: "https://lh6.googleusercontent.com/CX5zExOrEIv_RI8DzK3nZsp9Ho_rxksEbPmejKPmpKI7ZwitzTYeTr1JHQwKTki9lgQMgxHAMscj835qED0LsWlze3F7B8CiGasYyFRrR95AgtBrzFA=w572",
-    description: "",
+    description: [
+      "Developed games and interactive exhibits using Unity3D for multiple platforms.", 
+      "Integrated Virtual and Augmented Reality devices into the applications.",
+      "Led and supervised small teams to complete the projects.",
+      "Managed the outsourcing of jobs such as audio creation."
+    ],
     link: "https://www.infinitogames.com/"
   },
 ];
 
 export const contactData = [
   {
+    icon: DescriptionIcon,
+    link: ResumeLink,
+    text: "Resume",
+  },
+  {
     icon: MailIcon,
-    link: "mail"+"to:"+"contact"+"@"+"raynoldtan.com", //split data to prevent data scraping
-    text: "contact"+"@"+"raynoldtan.com", //split data to prevent data scraping
+    link: "mailto:contact@raynoldtan.com", 
+    text: "contact@raynoldtan.com",
   },
   {
     icon: LinkedInIcon,

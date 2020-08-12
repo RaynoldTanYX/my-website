@@ -33,14 +33,14 @@ import PlatformIcon from '@material-ui/icons/Devices';
 import QualificationIcon from '@material-ui/icons/Assignment';
 //icons for contact
 import MailIcon from '@material-ui/icons/Mail';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import ContactForm from "../ContactForm";
+import LaunchIcon from '@material-ui/icons/Launch';
 //constants
 import { projectData, educationData, workData, contactData } from '../../Constants';
 
 const useStyles = makeStyles({
   root: {
-    backgroundColor: "black",
+    //backgroundColor: "black",
     //minHeight: '100vh',
     width: "100%",
     height: "100%"
@@ -52,18 +52,18 @@ const useStyles = makeStyles({
   },
   tabspaper: {
     //width: "100%",
-    backgroundColor: grey[900],
+    //backgroundColor: grey[900],
     justify: 'center',
   },
   contentpaper: {
     //width: '100%',
     minHeight: "70vh",
     justify: 'center',
-    backgroundColor: grey[900],
+    //backgroundColor: grey[900],
   },
   projcard: {
     //maxWidth: 345,
-    backgroundColor: grey[800],
+    //backgroundColor: grey[800],
   },
   projcardmediacontainer: {
     paddingTop: "56.25%", //to maintain 16:9 aspect ratio
@@ -98,7 +98,7 @@ function App() {
 
   const theme = createMuiTheme({
     palette: {
-      type: "dark",
+      //type: "dark",
       primary: teal,
       secondary: pink,
     },
@@ -165,7 +165,7 @@ function App() {
     for (let i = 0; i < projectData.length; i++) {
       projects.push(
         <Grid item xs={12} md={6} xl={3}>
-          <Card className={classes.projcard} elevation={3}>
+          <Card className={classes.projcard} elevation={1}>
             <CardActionArea onClick={()=>window.open(projectData[i].link,"_blank")}>
               <Grid container className={classes.projcardmediacontainer}>
                 <CardMedia
@@ -249,7 +249,7 @@ function App() {
     for (let i = 0; i < educationData.length; i++) {
       education.push(
         <Grid item xs={12}>
-          <Card className={classes.projcard} elevation={3}>
+          <Card className={classes.projcard} elevation={1}>
             <CardActionArea onClick={()=>window.open(educationData[i].link,"_blank")}>
               <CardContent>
 
@@ -318,7 +318,7 @@ function App() {
     for (let i = 0; i < workData.length; i++) {
       work.push(
         <Grid item xs={12}>
-          <Card className={classes.projcard} elevation={3}>
+          <Card className={classes.projcard} elevation={1}>
             <CardActionArea onClick={()=>window.open(workData[i].link,"_blank")}>
               <CardContent>
 
@@ -386,8 +386,8 @@ function App() {
     let contacts = [];
     contacts.push(
       <Grid item xs={12}>
-        <Card className={classes.projcard} elevation={3}>
-          <CardActionArea>
+        <Card className={classes.projcard} elevation={1}>
+          {/* <CardActionArea> */}
             <CardContent>                
               <Grid container direction="column" justify="center" alignItems="center" wrap="nowrap" spacing={1}>
                 <Grid item>
@@ -400,14 +400,14 @@ function App() {
                 </Grid>
               </Grid>
             </CardContent>
-          </CardActionArea>
+          {/* </CardActionArea> */}
         </Card>
       </Grid>
       );
     contactData.map((item, index) => {
       contacts.push(
         <Grid item xs={12}>
-          <Card className={classes.projcard} elevation={3}>
+          <Card className={classes.projcard} elevation={1}>
             <CardActionArea onClick={()=>window.open(item.link,"_blank")}>
               <CardContent>                
                 <Grid container direction="column" justify="center" alignItems="center" wrap="nowrap" spacing={1}>
@@ -416,7 +416,7 @@ function App() {
                   </Grid>
                   <Grid item>
                   <Typography variant="body1" color="textSecondary" component="p" align="left">
-                    {item.text}
+                    {item.text} <SvgIcon color="secondary" fontSize='small' component={LaunchIcon}/>
                   </Typography>
                   </Grid>
                 </Grid>
