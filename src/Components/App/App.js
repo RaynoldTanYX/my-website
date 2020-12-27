@@ -254,14 +254,14 @@ function App() {
               <CardContent>
 
                 <Grid container spacing={2} alignItems="flex-start">
-                  <Grid item xs={2} md={1}>
+                  {/* <Grid item xs={2} md={1}>
                     <CardMedia
                       component="img"
                       className={classes.educardmedia}
                       src={educationData[i].image}
                       title={educationData[i].institute}
                     />
-                  </Grid>
+                  </Grid> */}
                   <Grid item xs={10} md={11}>
                     <Typography gutterBottom variant="h5" component="h2">
                       {educationData[i].institute}
@@ -323,14 +323,14 @@ function App() {
               <CardContent>
 
                 <Grid container spacing={2} alignItems="flex-start">
-                  <Grid item xs={2} md={1}>
+                  {/* <Grid item xs={2} md={1}>
                     <CardMedia
                       component="img"
                       className={classes.workcardmedia}
                       src={workData[i].image}
                       title={workData[i].company}
                     />
-                  </Grid>
+                  </Grid> */}
                   <Grid item xs={10} md={11}>
                     <Typography gutterBottom variant="h5" component="h2">
                       {workData[i].company}
