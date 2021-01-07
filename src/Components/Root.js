@@ -8,11 +8,23 @@ import Experience from "./Pages/Experience";
 import Home from "./Pages/Home";
 import Portfolio from "./Pages/Portfolio";
 
+import Particles from "react-particles-js";
+
 const Root = () => {
   return (
     <div>
       <HashRouter>
         <NavBar />
+        <Particles
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: -1,
+          }}
+        />
         <div style={{ height: "10vh" }} />
         <Switch>
           <Route component={Home} exact path="/" />
