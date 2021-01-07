@@ -1,0 +1,27 @@
+:root {
+    --dark1: #2E3440;
+    --dark2: #3B4252;
+    --dark3: #434C5E;
+    --dark4:#4C566A;
+  
+    --light1: #D8DEE9;
+    --light2: #E5E9F0;
+    --light3:#ECEFF4;
+  
+    --accent:#8FBCBB;
+  }
+  
+html, body {
+    color: var(--light3);
+}
+
+.root {
+    width: '100%';
+    height: '100%';
+}
+
+.background {
+    justify-self: 'center';
+    background-color: '#3B4252';
+    width: '80vw';
+}

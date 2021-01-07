@@ -89,8 +89,8 @@ class ContactForm extends Component {
             type="checkbox"
             name="_honeypot"
             style={{display: "none"}}
-            tabindex="-1"
-            autocomplete="off"
+            tabIndex="-1"
+            autoComplete="off"
           />
             <Grid
                 container
@@ -139,7 +139,7 @@ class ContactForm extends Component {
                       <Recaptcha
                         sitekey={recaptchaKey}
                         render="onload"
-                        theme="light"
+                        theme="dark"
                         verifyCallback={this.onCaptchaVerify}
                         />
                     </Grid>

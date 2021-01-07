@@ -94,7 +94,7 @@ export const educationData = [
     institute: "Nanyang Technological University (NTU), Singapore",
     image: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Nanyang_Technological_University_coat_of_arms_vector.svg/150px-Nanyang_Technological_University_coat_of_arms_vector.svg.png",
     qualification: "Bachelor of Engineering in Computer Science",
-    duration: "2018-2022(expected)",
+    duration: "Aug 2018 - Dec 2021 (expected)",
     description: [
       "Sub-Committee Member for the Photo-Videographic Society."
     ],
@@ -104,7 +104,7 @@ export const educationData = [
     institute: "Nanyang Polytechnic (NYP), Singapore",
     image: "https://lh3.googleusercontent.com/proxy/x5xaZJJS12YRtPAfgduiQRPrOYGrR7HTN0hFcGBoOcjNKkgF5EAnKP0EjrIzJXiy8AHLejEAJQmy7LVF1BYtgYIBUJTY6PsrYFIa0AbpEV3VKpJTc5w",
     qualification: "Diploma in Digital Entertainment Technology (Games)",
-    duration: "2013-2016",
+    duration: "Apr 2013 - May 2016",
     description: [
       "Graduated with a GPA of 3.79.", 
       "Received Director's List awards for five semesters. ",

@@ -1,16 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './Components/App/App';
 import Root from './Components/Root';
-import { BrowserRouter } from "react-router-dom";
 import * as serviceWorker from './serviceWorker';
+import { ThemeProvider , createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+
+let theme = createMuiTheme({
+  palette: {
+    type: "dark",
+    common: {
+      black: "#2E3440",
+      white: "#ECEFF4",
+    },
+    primary: {
+      main: "#8FBCBB",
+    },
+    secondary: {
+      main: "#5E81AC",
+    },
+    text: {
+      primary: "#ECEFF4",
+    },
+    background: {
+      paper: "#3B4252",
+      default: "#2E3440"
+    },
+  },
+
+  // typography: {
+  //   fontFamily
+  // }
+});
+theme = responsiveFontSizes(theme);
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <ThemeProvider theme={theme}>
       <Root/>
-    </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

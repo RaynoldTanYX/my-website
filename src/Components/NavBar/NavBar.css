@@ -1,0 +1,128 @@
+:root {
+    --dark1: #2E3440;
+    --dark2: #3B4252;
+    --dark3: #434C5E;
+    --dark4:#4C566A;
+
+    --light1: #D8DEE9;
+    --light2: #E5E9F0;
+    --light3:#ECEFF4;
+
+    --accent:#8FBCBB;
+
+}
+
+.headerimage {
+    padding-left: 10px;
+    height: 10vh;
+}
+
+.headertext {
+    color: var(--accent);
+    padding-left: 25px;
+}
+
+.navbar {
+    background-color:var(--dark3);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+.menu-bars {
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    color: var(--light1);
+}
+.menu-bars a:hover{
+    color: var(--dark1);
+}
+
+.nav-menu {
+    background-color:var(--dark4);
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 1001;
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px, 0px, 8px, 16px;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: var(--light1);
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    border-radius: 4px;
+}
+
+.nav-text a:hover {
+    background-color: var(--accent);
+    color: var(--dark1);
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+.navbar-toggle {
+    background-color:var(--dark4);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar-toggle a:hover{
+    color: var(--dark1);
+}
+
+.overlay {
+    position:fixed;
+    z-index: 1000;
+    display:block;
+
+    /* color with alpha transparency */
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* stretch to screen edges */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.overlay.disabled {
+    display:none;
+}
+
+span {
+    margin-left: 16px;
+}
