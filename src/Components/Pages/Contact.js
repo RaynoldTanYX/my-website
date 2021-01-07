@@ -3,7 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import { Card, CardContent, CardActionArea } from "@material-ui/core";
 import SvgIcon from "@material-ui/core/SvgIcon";
 import MailIcon from "@material-ui/icons/Mail";
-import ContactForm from "../ContactForm";
+import ContactForm from "./ContactForm";
 import LaunchIcon from "@material-ui/icons/Launch";
 import { contactData } from "../../Constants";
 import ScrollToTop from "../ScrollToTop";

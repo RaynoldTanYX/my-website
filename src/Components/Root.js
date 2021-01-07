@@ -7,7 +7,6 @@ import Education from "./Pages/Education";
 import Experience from "./Pages/Experience";
 import Home from "./Pages/Home";
 import Portfolio from "./Pages/Portfolio";
-import RainApp from "./RainApp/RainApp";
 
 const Root = () => {
   return (
@@ -21,7 +20,6 @@ const Root = () => {
           <Route component={Education} exact path="/education" />
           <Route component={Experience} path="/experience" />
           <Route component={Contact} path="/contact" />
-          <Route component={RainApp} path="/rain" />
           <Route component={Home} />
         </Switch>
       </HashRouter>
