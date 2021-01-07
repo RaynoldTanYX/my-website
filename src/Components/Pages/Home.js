@@ -168,7 +168,7 @@ function Home() {
             <Typography variant="subtitle1">Hi, my name is</Typography>
           </Grid>
           <Grid item>
-            <Typography variant="h2" color="primary">
+            <Typography variant="h2" color="secondary">
               Raynold Tan
             </Typography>
           </Grid>
@@ -182,7 +182,7 @@ function Home() {
           </Grid>
           <div style={{ height: "20px" }} />
           <Grid item>
-            <Button variant="outlined" color="primary" href="#/contact">
+            <Button variant="contained" color="secondary" href="#/contact">
               Get In Touch
             </Button>
           </Grid>

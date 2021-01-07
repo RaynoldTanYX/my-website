@@ -129,6 +129,7 @@ function Education() {
       <ScrollToTop />
       <div style={{ height: "25px" }} />
       {RenderEducation()}
+      <div style={{ height: "100px" }} />
     </div>
   );
 }

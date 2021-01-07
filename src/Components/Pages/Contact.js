@@ -119,6 +119,7 @@ function Contact() {
           {RenderContactObjects()}
         </Grid>
       </Grid>
+      <div style={{ height: "100px" }} />
     </div>
   );
 }
