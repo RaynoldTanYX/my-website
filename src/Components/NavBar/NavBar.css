@@ -91,6 +91,37 @@
     width: 100%;
 }
 
+.nav-text-wide {
+    display: inline;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 8px, 8px, 8px, 8px; */
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text-wide a {
+    text-decoration: none;
+    color: var(--light1);
+    font-size: 18px;
+    /* width: 95%;
+    height: 100%; */
+    /* display: inline;
+    align-items: center; */
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.nav-text-wide a:hover {
+    background-color: var(--accent);
+    color: var(--dark1);
+}
+
+.nav-menu-items-wide {
+    width: 100%;
+    list-style: none;
+}
+
 .navbar-toggle {
     background-color:var(--dark4);
     width: 100%;
@@ -121,8 +152,4 @@
 
 .overlay.disabled {
     display:none;
-}
-
-span {
-    margin-left: 16px;
 }
