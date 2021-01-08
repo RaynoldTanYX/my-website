@@ -9,6 +9,7 @@ import QualificationIcon from "@material-ui/icons/Assignment";
 //constants
 import { workData } from "../../Constants";
 import ScrollToTop from "../ScrollToTop";
+import Footer from "../Footer/Footer";
 
 function Experience() {
   const RenderDescription = (descArray) => {
@@ -132,6 +133,7 @@ function Experience() {
       <div style={{ height: "25px" }} />
       {RenderWork()}
       <div style={{ height: "100px" }} />
+      <Footer/>
     </div>
   );
 }

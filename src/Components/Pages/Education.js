@@ -6,7 +6,9 @@ import YearIcon from "@material-ui/icons/EventAvailable";
 import QualificationIcon from "@material-ui/icons/Assignment";
 //constants
 import { educationData } from "../../Constants";
+
 import ScrollToTop from "../ScrollToTop";
+import Footer from "../Footer/Footer";
 
 function Education() {
   const RenderDescription = (descArray) => {
@@ -130,6 +132,7 @@ function Education() {
       <div style={{ height: "25px" }} />
       {RenderEducation()}
       <div style={{ height: "100px" }} />
+      <Footer />
     </div>
   );
 }
