@@ -1,36 +1,37 @@
 :root {
-  --dark1: #2E3440;
-  --dark2: #3B4252;
-  --dark3: #434C5E;
-  --dark4:#4C566A;
+  --dark1: #2e3440;
+  --dark2: #3b4252;
+  --dark3: #434c5e;
+  --dark4: #4c566a;
 
-  --light1: #D8DEE9;
-  --light2: #E5E9F0;
-  --light3:#ECEFF4;
+  --light1: #d8dee9;
+  --light2: #e5e9f0;
+  --light3: #eceff4;
 
-  --accent:#8FBCBB;
+  --accent: #8fbcbb;
 }
 
 /* html, body {
   overflow-x: hidden; /*to prevent horizontal scrolling on mobile*/
-  /* height: 100%; */
+/* height: 100%; */
 /*} */
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: black; */
-  background: rgb(46,52,64);
-background: linear-gradient(-45deg, rgba(46,52,64,1) 0%, rgba(94,129,172,1) 40%, rgba(129,161,193,1) 60%, rgba(136,192,208,1) 80%, rgba(143,188,187,1) 100%);
-min-height: 100vh;
+  background: rgb(46, 52, 64);
+  background: linear-gradient(-30deg, rgba(46,52,64,1) 0%, rgba(94,129,172,1) 40%, rgba(129,161,193,1) 60%, rgba(136,192,208,1) 80%, rgba(143,188,187,1) 100%);
+  /* background: rgb(129,161,193);
+background: linear-gradient(-45deg, rgba(129,161,193,1) 0%, rgba(136,192,208,1) 50%, rgba(143,188,187,1) 100%); */
+  min-height: 100vh;
   /* position: relative; */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

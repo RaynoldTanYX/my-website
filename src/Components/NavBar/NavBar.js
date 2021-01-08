@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
@@ -6,7 +6,7 @@ import { NavBarData } from "./NavBarData";
 import "./NavBar.css";
 
 function NavBar() {
-  const [showNavBar, setShowNavBar] = useState(false);
+  const [showNavBar, setShowNavBar] = React.useState(false);
   const enableNavBar = () => setShowNavBar(true);
   const disableNavBar = () => setShowNavBar(false);
   const [dimensions, setDimensions] = React.useState({

@@ -113,8 +113,8 @@
 }
 
 .nav-text-wide a:hover {
-    background-color: var(--accent);
-    color: var(--dark1);
+    /* background-color: var(--accent); */
+    color: var(--accent);
 }
 
 .nav-menu-items-wide {

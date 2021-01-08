@@ -28,7 +28,9 @@ let theme = createMuiTheme({
   },
 
   // typography: {
-  //   fontFamily
+  //   fontFamily: [
+  //     'Roboto'
+  //   ]
   // }
 });
 theme = responsiveFontSizes(theme);

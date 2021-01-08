@@ -11,7 +11,7 @@ import ScrollToTop from "../ScrollToTop";
 function Contact() {
   const RenderContactForm = () => {
     return (
-      <Grid item xs={11} md={7}>
+      <Grid item>
         <Card elevation={1}>
           {/* <CardActionArea> */}
           <CardContent>
@@ -94,7 +94,7 @@ function Contact() {
   };
   return (
     <div>
-      <ScrollToTop/>
+      <ScrollToTop />
       <div style={{ height: "25px" }} />
       <Grid
         item
@@ -103,14 +103,25 @@ function Contact() {
         spacing={3}
         direction="row"
         justify="center"
-        alignItems="stretch"
+        alignItems="center"
       >
-        {RenderContactForm()}
+        <Grid item 
+          xs={11}
+          sm={9}
+          md={7}
+          lg={5}
+          xl={3}
+          >
+          {RenderContactForm()}
+        </Grid>
         <Grid
           item
           container
           xs={11}
-          md={3}
+          sm={9}
+          md={4}
+          lg={3}
+          xl={2}
           spacing={3}
           direction="column"
           justify="center"
