@@ -97,9 +97,7 @@ function Contact() {
       <ScrollToTop />
       <div style={{ height: "25px" }} />
       <Grid
-        item
         container
-        xs={12}
         spacing={3}
         direction="row"
         justify="center"

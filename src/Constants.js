@@ -16,7 +16,7 @@ export const projectData = [
     platform: "Web",
     description: [
     ],
-    link: "raynoldtan.com",
+    link: "https://raynoldtan.com",
   },
   {
     title: "Fitness App",
