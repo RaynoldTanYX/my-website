@@ -15,7 +15,6 @@ import WorkIcon from "@material-ui/icons/Work";
 import UnknownIcon from "@material-ui/icons/HelpOutline";
 import MedicIcon from "@material-ui/icons/LocalHospital";
 import ScrollToTop from "../ScrollToTop";
-import Footer from "../Footer/Footer";
 
 function Home() {
   const RenderTimeline = () => {
@@ -169,7 +168,7 @@ function Home() {
             <Typography variant="subtitle1">Hi, my name is</Typography>
           </Grid>
           <Grid item>
-            <Typography variant="h2" color="secondary" style={{textShadow: "2px 2px #ECEFF4"}}>
+            <Typography variant="h2">
               Raynold Tan
             </Typography>
           </Grid>
@@ -209,8 +208,6 @@ function Home() {
           </Button>
         </Grid>
       </Grid>
-      <div style={{ height: "100px" }} />
-      <Footer/>
     </div>
   );
 }

@@ -24,7 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(46, 52, 64);
-  background: linear-gradient(-30deg, rgba(46,52,64,1) 0%, rgba(94,129,172,1) 40%, rgba(129,161,193,1) 60%, rgba(136,192,208,1) 80%, rgba(143,188,187,1) 100%);
+  background: linear-gradient(-20deg, rgba(46,52,64,1) 0%, rgba(94,129,172,1) 40%, rgba(129,161,193,1) 60%, rgba(136,192,208,1) 80%, rgba(143,188,187,1) 100%);
   /* background: rgb(129,161,193);
 background: linear-gradient(-45deg, rgba(129,161,193,1) 0%, rgba(136,192,208,1) 50%, rgba(143,188,187,1) 100%); */
   min-height: 100vh;

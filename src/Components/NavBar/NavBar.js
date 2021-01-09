@@ -61,7 +61,7 @@ function NavBar() {
                 <li key={index} className={item.className}>
                   <Link to={item.path} onClick={disableNavBar}>
                     {item.icon}
-                    <span>{item.title}</span>
+                    <span style={{marginLeft: "10px"}}>{item.title}</span>
                   </Link>
                 </li>
               );

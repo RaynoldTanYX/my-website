@@ -2,11 +2,13 @@ import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
 import NavBar from "./NavBar/NavBar";
-import Contact from "./Pages/Contact";
-import Education from "./Pages/Education";
-import Experience from "./Pages/Experience";
 import Home from "./Pages/Home";
 import Portfolio from "./Pages/Portfolio";
+import Education from "./Pages/Education";
+import Experience from "./Pages/Experience";
+import Contact from "./Pages/Contact";
+import NotFound404 from "./Pages/NotFound404"
+import Footer from "./Footer/Footer";
 
 import Particles from "react-particles-js";
 
@@ -32,8 +34,10 @@ const Root = () => {
           <Route component={Education} exact path="/education" />
           <Route component={Experience} path="/experience" />
           <Route component={Contact} path="/contact" />
-          <Route component={Home} />
+          <Route component={NotFound404} />
         </Switch>
+        <div style={{ height: "100px" }} />
+        <Footer />
       </HashRouter>
     </div>
   );

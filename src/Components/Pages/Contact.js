@@ -7,7 +7,6 @@ import ContactForm from "./ContactForm";
 import LaunchIcon from "@material-ui/icons/Launch";
 import { contactData } from "../../Constants";
 import ScrollToTop from "../ScrollToTop";
-import Footer from "../Footer/Footer"
 
 function Contact() {
   const RenderContactForm = () => {
@@ -131,8 +130,6 @@ function Contact() {
           {RenderContactObjects()}
         </Grid>
       </Grid>
-      <div style={{ height: "100px" }} />
-      <Footer/>
     </div>
   );
 }

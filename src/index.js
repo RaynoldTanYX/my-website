@@ -1,9 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Root from './Components/Root';
-import * as serviceWorker from './serviceWorker';
-import { ThemeProvider , createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import Root from "./Components/Root";
+import * as serviceWorker from "./serviceWorker";
+import {
+  ThemeProvider,
+  createMuiTheme,
+  responsiveFontSizes,
+} from "@material-ui/core/styles";
 
 let theme = createMuiTheme({
   palette: {
@@ -23,25 +27,23 @@ let theme = createMuiTheme({
     },
     background: {
       paper: "#3B4252",
-      default: "#2E3440"
+      default: "#2E3440",
     },
   },
 
-  // typography: {
-  //   fontFamily: [
-  //     'Roboto'
-  //   ]
-  // }
+  typography: {
+    fontFamily: ["Roboto", "sans-serif"].join(","),
+  },
 });
 theme = responsiveFontSizes(theme);
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <Root/>
+      <Root />
     </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

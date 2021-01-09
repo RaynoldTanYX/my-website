@@ -14,7 +14,6 @@ import PlatformIcon from "@material-ui/icons/Devices";
 //constants
 import { projectData } from "../../Constants";
 import ScrollToTop from "../ScrollToTop";
-import Footer from "../Footer/Footer";
 const useStyles = makeStyles({
   projcardmediacontainer: {
     paddingTop: "56.25%", //to maintain 16:9 aspect ratio
@@ -185,8 +184,6 @@ function Portfolio() {
       <ScrollToTop/>
       <div style={{ height: "25px" }} />
       {RenderProjects()}
-      <div style={{ height: "100px" }} />
-      <Footer/>
     </div>
   );
 }
