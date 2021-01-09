@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-import Grid from "@material-ui/core/Grid";
+import {TextField, Button} from "@material-ui/core";
 import Recaptcha from "react-recaptcha";
 import { recaptchaKey, contactFormLink } from "../../Constants";
 
@@ -76,7 +74,7 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
+      <form onSubmit={this.onSubmit} style={{width: "100%"}}>
         <input
           type="checkbox"
           name="_honeypot"
@@ -84,14 +82,6 @@ class ContactForm extends Component {
           tabIndex="-1"
           autoComplete="off"
         />
-        <Grid
-          container
-          direction="column"
-          justify="flex-start"
-          alignItems="stretch"
-          spacing={2}
-        >
-          <Grid item>
             <TextField
               required
               id="name"
@@ -102,8 +92,7 @@ class ContactForm extends Component {
               onChange={this.onChange}
               disabled={this.state.inputDisabled}
             />
-          </Grid>
-          <Grid item xs={12}>
+            <div style={{height:"10px"}}/>
             <TextField
               required
               id="email"
@@ -114,8 +103,7 @@ class ContactForm extends Component {
               onChange={this.onChange}
               disabled={this.state.inputDisabled}
             />
-          </Grid>
-          <Grid item xs={12}>
+            <div style={{height:"10px"}}/>
             <TextField
               required
               multiline
@@ -128,28 +116,24 @@ class ContactForm extends Component {
               onChange={this.onChange}
               disabled={this.state.inputDisabled}
             />
-          </Grid>
-          <Grid item container justify="flex-end" spacing={2}>
-            <Grid item>
+            <div style={{height:"10px"}}/>
               <Recaptcha
                 sitekey={recaptchaKey}
                 render="onload"
                 theme="dark"
                 verifyCallback={this.onCaptchaVerify}
               />
-            </Grid>
-            <Grid item>
+              <div style={{height:"10px"}}/>
               <Button
                 variant="contained"
                 color="secondary"
                 type="submit"
                 disabled={this.state.inputDisabled}
+                style={{float:"right"}}
               >
                 Submit
               </Button>
-            </Grid>
-          </Grid>
-        </Grid>
+              <div style={{height:"30px"}}/>
       </form>
     );
   }

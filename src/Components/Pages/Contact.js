@@ -19,11 +19,11 @@ function Contact() {
               container
               direction="column"
               justify="center"
-              alignItems="center"
+              alignItems="stretch"
               wrap="nowrap"
-              spacing={1}
+              spacing={2}
             >
-              <Grid item>
+              <Grid item style={{textAlign: "center"}}>
                 <SvgIcon
                   color="primary"
                   fontSize="large"
@@ -31,9 +31,7 @@ function Contact() {
                 />
               </Grid>
               <Grid item>
-                <Typography variant="body1" component="p" align="left">
                   {<ContactForm />}
-                </Typography>
               </Grid>
             </Grid>
           </CardContent>
@@ -47,7 +45,7 @@ function Contact() {
     let contacts = [];
     contactData.forEach((item) => {
       contacts.push(
-        <Grid item>
+        <Grid item key={item.link}>
           <Card elevation={1}>
             <CardActionArea onClick={() => window.open(item.link, "_blank")}>
               <CardContent>
@@ -106,7 +104,7 @@ function Contact() {
         <Grid item 
           xs={11}
           sm={9}
-          md={7}
+          md={6}
           lg={5}
           xl={3}
           >

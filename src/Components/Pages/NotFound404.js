@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Divider, Typography, Button } from "@material-ui/core";
+import { Grid, Typography, Button } from "@material-ui/core";
 import "./Pages.css";
 import UnknownIcon from "@material-ui/icons/HelpOutline";
 import ScrollToTop from "../ScrollToTop";
