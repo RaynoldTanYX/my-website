@@ -6,20 +6,22 @@ import DescriptionIcon from '@material-ui/icons/Description';
 import ResumeLink from './files/resume.pdf'
 
 export const projectData = [
-  // {
-  //   title: "Personal Website",
-  //   //video: "raynoldtan.com",
-  //   year: "2020",
-  //   language: "Javascript",
-  //   tools: "ReactJS and Material-UI",
-  //   platform: "Web",
-  //   description: [
-  //   ],
-  //   link: "raynoldtan.com",
-  // },
+  {
+    title: "Personal Website",
+    media: "https://raynoldtan.com/static/media/logo512.c11c05c6.png",
+    mediaType: "img",
+    year: "2020",
+    language: "Javascript",
+    tools: "ReactJS and Material-UI",
+    platform: "Web",
+    description: [
+    ],
+    link: "raynoldtan.com",
+  },
   {
     title: "Fitness App",
-    video: "https://www.youtube.com/embed/FdgN4c3AtR4",
+    media: "https://www.youtube.com/embed/FdgN4c3AtR4",
+    mediaType: "iframe",
     year: "2020",
     language: "Java",
     tools: "Android Studio",
@@ -31,7 +33,8 @@ export const projectData = [
   },
   {
     title: "Activation App",
-    video: "https://www.youtube.com/embed/8AwZOFpQwSg",
+    media: "https://www.youtube.com/embed/8AwZOFpQwSg",
+    mediaType: "iframe",
     year: "2018",
     language: "Java",
     tools: "Android Studio",
@@ -44,7 +47,8 @@ export const projectData = [
   },
   {
     title: "Space Arena",
-    video: "https://www.youtube.com/embed/IX0dHolltBo",
+    media: "https://www.youtube.com/embed/IX0dHolltBo",
+    mediaType: "iframe",
     year: "2016",
     language: "C#",
     tools: "Unity3D",
@@ -58,7 +62,8 @@ export const projectData = [
   },
   {
     title: "Cyber Evil Terminator",
-    video: "https://www.youtube.com/embed/_Ivy0j2iYXQ",
+    media: "https://www.youtube.com/embed/_Ivy0j2iYXQ",
+    mediaType: "iframe",
     year: "2015",
     language: "C#",
     tools: "Unity3D",
@@ -74,7 +79,8 @@ export const projectData = [
   },
   {
     title: "Financial Assistance Grand Tourney",
-    video: "https://www.youtube.com/embed/bICqhb2jjkI",
+    media: "https://www.youtube.com/embed/bICqhb2jjkI",
+    mediaType: "iframe",
     year: "2015",
     language: "C#",
     tools: "Unity3D",

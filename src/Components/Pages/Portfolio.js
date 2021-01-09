@@ -53,9 +53,9 @@ function Portfolio() {
             >
               <Grid container className={classes.projcardmediacontainer}>
                 <CardMedia
-                  component="iframe"
+                  component={projectData[i].mediaType}
                   className={classes.projcardmedia}
-                  src={projectData[i].video}
+                  src={projectData[i].media}
                   title={projectData[i].title}
                 />
               </Grid>
