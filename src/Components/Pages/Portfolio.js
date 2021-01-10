@@ -171,10 +171,8 @@ function Portfolio() {
       );
     }
     return (
-      <Grid container item xs={12} justify="center" alignItems="stretch">
-        <Grid container item xs={11} spacing={3} direction="row" justify="center" alignItems="stretch">
+      <Grid container item xs={11} spacing={3} justify="center" alignItems="stretch" style={{marginLeft:"auto", marginRight:"auto"}}>
           {projects}
-        </Grid>
       </Grid>
     );
   };

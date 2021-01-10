@@ -96,10 +96,12 @@ function Contact() {
       <div style={{ height: "25px" }} />
       <Grid
         container
+        xs={12}
         spacing={3}
         direction="row"
         justify="center"
-        alignItems="center"
+        alignItems="stretch"
+        style={{marginLeft:"auto", marginRight:"auto"}}
       >
         <Grid item 
           xs={11}
@@ -114,7 +116,7 @@ function Contact() {
           item
           container
           xs={11}
-          sm={9}
+          sm={6}
           md={4}
           lg={3}
           xl={2}

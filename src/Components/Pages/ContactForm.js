@@ -74,7 +74,7 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit} style={{width: "100%"}}>
+      <form onSubmit={this.onSubmit}>
         <input
           type="checkbox"
           name="_honeypot"
