@@ -169,7 +169,7 @@ function Home() {
           </Grid>
           <Grid item>
             <Typography variant="h2">
-              Raynold Tan
+              <b>RAYNOLD</b> TAN
             </Typography>
           </Grid>
           <div style={{ height: "10px" }} />
