@@ -7,6 +7,8 @@ import Portfolio from "./Pages/Portfolio";
 import Education from "./Pages/Education";
 import Experience from "./Pages/Experience";
 import Contact from "./Pages/Contact";
+import PostsList from "./Pages/Blog/PostsList";
+import Post from "./Pages/Blog/Post";
 import NotFound404 from "./Pages/NotFound404"
 import Footer from "./Footer/Footer";
 
@@ -30,10 +32,13 @@ const Root = () => {
         <div style={{ height: "10vh" }} />
         <Switch>
           <Route component={Home} exact path="/" />
-          <Route component={Portfolio} path="/portfolio" />
+          <Route component={Portfolio} exact path="/portfolio" />
           <Route component={Education} exact path="/education" />
-          <Route component={Experience} path="/experience" />
-          <Route component={Contact} path="/contact" />
+          <Route component={Experience} exact path="/experience" />
+          <Route component={Contact} exact path="/contact" />
+          <Route component={PostsList} exact path="/posts" />
+          <Route component={Post} path="/post/:id" />
+          <Route component={NotFound404} exact path="/404" />
           <Route component={NotFound404} />
         </Switch>
         <div style={{ height: "100px" }} />
