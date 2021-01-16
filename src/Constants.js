@@ -12,9 +12,12 @@ export const projectData = [
     mediaType: "img",
     year: "2020",
     language: "Javascript",
-    tools: "ReactJS and Material-UI",
+    tools: "ReactJS, Material-UI and NetlifyCMS",
     platform: "Web",
     description: [
+      "Initially created during one of my internships to learn and practice ReactJS and MaterialUI during my free-time. Now, it is frequently updated to showcase my experience in the industry. ",
+      "Hosted using Github Pages and using Cloudflare for the SSL certificate to maintain a low running cost.",
+      "Blog section is implemented using NetlifyCMS to allow for easy creation and edits of posts."
     ],
     link: "https://raynoldtan.com",
   },
