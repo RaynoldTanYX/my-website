@@ -5,6 +5,7 @@ import {
   Card,
   CardContent,
   CardMedia,
+  Divider,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import Markdown from "react-markdown";
@@ -38,10 +39,16 @@ function PostsList() {
               return (
                 <Grid item key={i}>
                   <Card>
-                    <CardMedia
-                      src={post.thumbnail}
-                      title={post.title}
-                    />
+                    {post.thumbnail ? (
+                      <CardMedia
+                        component="img"
+                        src={post.thumbnail}
+                        title={post.title}
+                      />
+                    ) : (
+                      <></>
+                    )}
+
                     <CardContent>
                       <Typography variant="h4" className="postTitle">
                         <Link
@@ -54,8 +61,9 @@ function PostsList() {
                       </Typography>
                       <Typography variant="subtitle1">
                         Published on {post.date} by {post.author}
-                        <Markdown source={excerptList[i]} escapeHtml={false} />
                       </Typography>
+                      <Divider />
+                      <Markdown source={excerptList[i]} escapeHtml={false} className="postExerpt"/>
                       <Typography variant="caption" className="readMore">
                         <Link
                           to={`/post/${post.id}`}
