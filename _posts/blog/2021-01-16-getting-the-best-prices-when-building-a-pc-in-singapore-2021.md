@@ -14,7 +14,7 @@ Being in Singapore, there are not many places to choose from to buy the parts fr
 
 The best physical place to get components for your new build would be **[Sim Lim Square](https://simlimsquare.com.sg/) (SLS)**. 
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7865647417907!2d103.8507321147539!3d1.303043299049612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19bbd63d9707%3A0xc74a2b4c417f7f3d!2sSim%20Lim%20Square!5e0!3m2!1sen!2ssg!4v1610792742170!5m2!1sen!2ssg" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
 
 Located at **1 Rochor Canal Road, Singapore 188504**, SLS is a large retail complex in Singapore that offers a wide variety of electronic goods and services ranging from DVDs, cameras, phones, video cameras, and computer parts and servicing.
 
