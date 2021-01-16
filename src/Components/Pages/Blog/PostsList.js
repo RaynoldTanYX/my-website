@@ -1,5 +1,11 @@
 import React from "react";
-import { Grid, Typography, Card, CardContent } from "@material-ui/core";
+import {
+  Grid,
+  Typography,
+  Card,
+  CardContent,
+  CardMedia,
+} from "@material-ui/core";
 import { Link } from "react-router-dom";
 import Markdown from "react-markdown";
 
@@ -14,41 +20,52 @@ function PostsList() {
     });
     return (
       <div>
-        <Grid container item
-        xs={11}
-        sm={9}
-        md={7}
-        xl={5}
-        spacing={3}
-        direction="column"
-        justify="center"
-        alignItems="stretch"
-        style={{ marginLeft: "auto", marginRight: "auto" }}>
+        <Grid
+          container
+          item
+          xs={11}
+          sm={9}
+          md={7}
+          xl={5}
+          spacing={3}
+          direction="column"
+          justify="center"
+          alignItems="stretch"
+          style={{ marginLeft: "auto", marginRight: "auto" }}
+        >
           {postList.length &&
             postList.map((post, i) => {
               return (
                 <Grid item key={i}>
                   <Card>
-                      <CardContent>
-                        <Typography variant="h4" className="postTitle">
-                        <Link to={`/post/${post.id}`} color="inherit" underline="hover">
+                    <CardMedia
+                      src={post.thumbnail}
+                      title={post.title}
+                    />
+                    <CardContent>
+                      <Typography variant="h4" className="postTitle">
+                        <Link
+                          to={`/post/${post.id}`}
+                          color="inherit"
+                          underline="hover"
+                        >
                           {post.title}
                         </Link>
-                        </Typography>
-                        <Typography variant="subtitle1">
-                          Published on {post.date} by {post.author}
-                          <Markdown
-                            source={excerptList[i]}
-                            escapeHtml={false}
-                          />
-                        </Typography>
-                          <Typography variant="caption" className="readMore">
-                        <Link to={`/post/${post.id}`} color="inherit" underline="hover">
-                            Read more
+                      </Typography>
+                      <Typography variant="subtitle1">
+                        Published on {post.date} by {post.author}
+                        <Markdown source={excerptList[i]} escapeHtml={false} />
+                      </Typography>
+                      <Typography variant="caption" className="readMore">
+                        <Link
+                          to={`/post/${post.id}`}
+                          color="inherit"
+                          underline="hover"
+                        >
+                          Read more
                         </Link>
-                          </Typography>
-
-                      </CardContent>
+                      </Typography>
+                    </CardContent>
                   </Card>
                 </Grid>
               );
