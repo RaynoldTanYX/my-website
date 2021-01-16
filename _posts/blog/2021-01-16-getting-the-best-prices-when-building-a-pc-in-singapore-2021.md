@@ -24,8 +24,24 @@ With 7 levels of shopping and over 150 individual stores, SLS can appear intimid
 
 Here comes the hard part: go to a couple of stores selling PC parts, usually at the front of the store, they will have their pricelists printed on paper that you can take. You don't have to do this for too many stores, maybe just do it for around 5 stores so you can compare prices and get a good average. If you're familiar with SLS and its stores, you can just choose the bigger names in this industry. If you want an easier and more eco-friendly approach, the more popular stores will have their price lists on their websites or social media so you won't even have to make a trip down to SLS to compare prices. 
 
+In my most recent build, I have seen **price differences of about a total of $50 between stores**.
+
+The best part of buying the parts from a physical store would be the service. Unsure if your parts are compatible with each other? Need recommendations? Just ask the people working there. 
+
+Additionally, most stores also have a **building service** where they can help you build the system for you using the parts you have chosen. However, this would incur a build fee of a few tens of dollars and would most likely require you to have to purchase all the parts from that store.  
+
 ## Online stores
 
 
 
+In my most recent build, when buying both from physical stores and Amazon, I've seen a **huge price difference of around 15%**,which amounted to $200,as compared to only buying from physical stores.
+
+
+
 # What to do if I don't know how to choose parts?
+
+
+
+# Conclusion
+
+If you want the best prices for your new build, you're going to have to put in some effort. If you want a system for the lowest effort,
