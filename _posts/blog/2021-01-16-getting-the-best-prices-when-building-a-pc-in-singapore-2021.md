@@ -34,9 +34,9 @@ Unlike shopping offline, customers are unable to physically view the merchandise
 
 With the local big-name e-commerce sites such as Lazada and Shopee, you're able to find some good deals. However, prices on those websites are still quite similar to those you can find locally, although a bit better with promos and discounts.
 
-The goldmine here would be Amazon Singapore. Here, you're able to buy components from Singapore as well as other countries such as the USA. This means that pricing on the website would have to be competitive globally. Usually, when buying from overseas, the main concern would be shipping costs and returns policy. With an Amazon Prime subscription of $2.99 a month (as of Jan 2021), you're able to get **free shipping** on most items. Additionally, Amazon has an amazing **returns policy** where you can return any items within two weeks of receiving them. The only downside would be a longer delivery time.
+The goldmine here would be **Amazon Singapore**. Here, you're able to buy components from Singapore as well as other countries such as the USA. This means that pricing on the website would have to be competitive globally. Usually, when buying from overseas, the main concern would be shipping costs and returns policy. With an **Amazon Prime subscription of $2.99 a month** (as of Jan 2021), you're able to get **free shipping** on most items. Additionally, Amazon has an amazing **returns policy** where you can return any items within two weeks of receiving them. The only downside would be a longer delivery time.
 
-In my most recent build, when looking at the prices online, some parts such as memory and storage are a lot cheaper, but other parts such as cases and power supplies are much more expensive. However, when buying from both physical stores and online stores (mostly Amazon), I've seen a **huge price difference of around 15%**,which amounted to $200,as compared to only buying from physical stores. 
+In my most recent build, when looking at the prices online, some parts such as memory and storage are a lot cheaper, but other parts such as cases and power supplies are much more expensive. However, when buying from both physical stores and online stores (mostly Amazon), I've seen a **huge price difference of around 15%**, which amounted to $200, as compared to only buying from physical stores. 
 
 # Conclusion
 
