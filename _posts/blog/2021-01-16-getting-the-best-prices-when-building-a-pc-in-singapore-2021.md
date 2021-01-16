@@ -4,8 +4,6 @@ author: Raynold Tan
 date: 2021-01-16T10:03:02.360Z
 thumbnail: /images/uploads/fidel-fernando-dubqveffbfq-unsplash.jpg
 ---
-# Introduction
-
 **"Building a PC is almost as easy as building a Lego set"** is what I tell my friends when they ask me about it. However, purchasing the parts required for the build is not as simple as walking into a store and be able to buy everything you need in a single cardboard box.
 
 # Where to buy parts from?
