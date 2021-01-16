@@ -26,22 +26,20 @@ Here comes the hard part: go to a couple of stores selling PC parts, usually at 
 
 In my most recent build, I have seen **price differences of about a total of $50 between stores**.
 
-The best part of buying the parts from a physical store would be the service. Unsure if your parts are compatible with each other? Need recommendations? Just ask the people working there. 
+The best part of buying the parts from a physical store would be the service. Unsure if your parts are compatible with each other? Need recommendations? Just ask the sales staff.
 
 Additionally, most stores also have a **building service** where they can help you build the system for you using the parts you have chosen. However, this would incur a build fee of a few tens of dollars and would most likely require you to have to purchase all the parts from that store.  
 
 ## Online stores
 
+Unlike shopping offline, customers are unable to physically view the merchandise and even ask questions to sales staff. This means that you would have to do all the research yourself when it comes to choosing the parts. 
 
+With the local big-name e-commerce sites such as Lazada and Shopee, you're able to find some good deals. However, prices on those websites are still quite similar to those you can find locally, although a bit better with promos and discounts.
 
-In my most recent build, when buying both from physical stores and Amazon, I've seen a **huge price difference of around 15%**,which amounted to $200,as compared to only buying from physical stores.
+The goldmine here would be Amazon Singapore. Here, you're able to buy components from Singapore as well as other countries such as the USA. This means that pricing on the website would have to be competitive globally. Usually, when buying from overseas, the main concern would be shipping costs and returns policy. With an Amazon Prime subscription of $2.99 a month (as of Jan 2021), you're able to get **free shipping** on most items. Additionally, Amazon has an amazing **returns policy** where you can return any items within two weeks of receiving them. The only downside would be a longer delivery time.
 
-
-
-# What to do if I don't know how to choose parts?
-
-
+In my most recent build, when looking at the prices online, some parts such as memory and storage are a lot cheaper, but other parts such as cases and power supplies are much more expensive. However, when buying from both physical stores and online stores (mostly Amazon), I've seen a **huge price difference of around 15%**,which amounted to $200,as compared to only buying from physical stores. 
 
 # Conclusion
 
-If you want the best prices for your new build, you're going to have to put in some effort. If you want a system for the lowest effort,
+If you want the best prices for your new build, you're going to have to put in some effort. If you know what parts you want and just want the parts to come to you, purchase them online. If you're unsure of what parts to get or just want to do some physical shopping, head down to SLS. However, if you want the best prices, you're going to have to combine both methods.
