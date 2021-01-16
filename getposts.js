@@ -74,7 +74,8 @@ const GetPosts = () => {
                 const date = new Date(datestring)
                 const timestamp = date.getTime() / 1000
                 post = {
-                    id: timestamp,
+                    id: file.split('.')[0],
+                    sort: timestamp,
                     title: metadata.title ? metadata.title : "No title given",
                     author: metadata.author ? metadata.author : "No author given",
                     date: publishedDate ? publishedDate : "No date given",
@@ -86,7 +87,7 @@ const GetPosts = () => {
                 ilist.push(i)
                 if (ilist.length === files.length) {
                     const sortedList = postList.sort ((a, b) => {
-                        return a.id < b.id ? 1 : -1
+                        return a.sort < b.sort ? 1 : -1
                     })
                     let data = JSON.stringify(sortedList)
                     fs.writeFileSync("src/posts.json", data)

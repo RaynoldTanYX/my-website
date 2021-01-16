@@ -1,12 +1,14 @@
 backend:
-  name: github
-  repo: RaynoldTanYX/my-website
-  branch: master # Branch to update (optional; defaults to master)
-  api_root: https://api.github.com
-  site_domain: location.hostname
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
-  cms_label_prefix: netlify-cms/
+  name: git-gateway
+  branch: master
+  # name: github
+  # repo: RaynoldTanYX/my-website
+  # branch: master # Branch to update (optional; defaults to master)
+  # api_root: https://api.github.com
+  # site_domain: location.hostname
+  # base_url: https://api.netlify.com
+  # auth_endpoint: auth
+  # cms_label_prefix: netlify-cms/
 
 # These lines should *not* be indented
 media_folder: "public/images/uploads" # Media files will be stored in the repo under static/images/uploads
