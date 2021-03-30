@@ -31,12 +31,12 @@ export const NavBarData = [
         icon: <WorkIcon/>,
         className: 'nav-text'
     },
-    {
-        title: 'Blog',
-        path: '/posts',
-        icon: <BlogIcon/>,
-        className: 'nav-text'
-    },
+    // {
+    //     title: 'Blog',
+    //     path: '/posts',
+    //     icon: <BlogIcon/>,
+    //     className: 'nav-text'
+    // },
     {
         title: 'Contact',
         path: '/contact',
